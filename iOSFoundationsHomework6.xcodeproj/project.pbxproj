@@ -52,7 +52,7 @@
 		1A7DE4551BC1E9070072F632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A7DE4611BC1E98B0072F632 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		1A7DE4631BC216300072F632 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		1AE144651BC33542007A15A4 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		1AE144651BC33542007A15A4 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonViewController.swift; path = ../PersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 		1A7DE4271BC1E9070072F632 = {
 			isa = PBXGroup;
 			children = (
-				1AE144651BC33542007A15A4 /* PersonViewController.swift */,
 				1A7DE4321BC1E9070072F632 /* iOSFoundationsHomework6 */,
 				1A7DE4471BC1E9070072F632 /* iOSFoundationsHomework6Tests */,
 				1A7DE4521BC1E9070072F632 /* iOSFoundationsHomework6UITests */,
@@ -104,6 +103,7 @@
 		1A7DE4321BC1E9070072F632 /* iOSFoundationsHomework6 */ = {
 			isa = PBXGroup;
 			children = (
+				1AE144651BC33542007A15A4 /* PersonViewController.swift */,
 				1A7DE4331BC1E9070072F632 /* AppDelegate.swift */,
 				1A7DE4351BC1E9070072F632 /* ViewController.swift */,
 				1A7DE4631BC216300072F632 /* Person.swift */,

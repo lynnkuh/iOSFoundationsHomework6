@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bH5-wi-Y8X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KFv-Iu-oz2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Person View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Person View Controller" id="BYZ-38-t0r" customClass="PersonViewController" sceneMemberID="viewController">
+                <viewController title="Person View Controller" id="BYZ-38-t0r" customClass="PersonViewController" customModule="iOSFoundationsHomework6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="personTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="9" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-17-9T1" userLabel="Person Table View">
-                                <rect key="frame" x="0.0" y="0.0" width="594" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="personTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="34" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-17-9T1" userLabel="Person Table View">
+                                <rect key="frame" x="20" y="0.0" width="594" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="9" id="MhH-FJ-RbW">
-                                        <rect key="frame" x="0.0" y="92" width="594" height="9"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="34" id="MhH-FJ-RbW">
+                                        <rect key="frame" x="0.0" y="92" width="594" height="34"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhH-FJ-RbW" id="x6w-5u-AvA">
-                                            <rect key="frame" x="0.0" y="0.0" width="594" height="9"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="594" height="33.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -35,6 +36,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sl6-17-9T1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="7AI-au-fhN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sl6-17-9T1" secondAttribute="bottom" constant="-72" id="7f3-n8-9NT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sl6-17-9T1" secondAttribute="trailing" constant="-34" id="Nlv-AI-EX5"/>
+                            <constraint firstItem="sl6-17-9T1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="as0-Uu-NC8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3qe-v3-FMi"/>
                     <connections>
@@ -43,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2210" y="716"/>
+            <point key="canvasLocation" x="1995" y="684"/>
         </scene>
         <!--Person Detail View Controller-->
         <scene sceneID="hZ7-9i-bAi">
@@ -57,29 +64,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u04-T1-c8B">
-                                <rect key="frame" x="20" y="40" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPQ-KF-0Mg">
+                                <rect key="frame" x="279" y="80" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="9bA-Gx-KET"/>
+                                    <constraint firstAttribute="height" constant="21" id="GjQ-Ia-ocZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-zN-nIL">
-                                <rect key="frame" x="20" y="6" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw0-Q9-dcS">
+                                <rect key="frame" x="279" y="126" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pvB-rg-5xJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hw0-Q9-dcS" firstAttribute="top" secondItem="rPQ-KF-0Mg" secondAttribute="bottom" constant="25" id="3ll-jr-mXG"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" id="FqZ-5O-nDF"/>
+                            <constraint firstItem="Hw0-Q9-dcS" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" id="cAC-N1-pmK"/>
+                            <constraint firstItem="Hw0-Q9-dcS" firstAttribute="top" secondItem="rPQ-KF-0Mg" secondAttribute="bottom" constant="25" id="cdN-aj-Wfc"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="16" id="xwY-cg-YRp"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="16" id="yhl-ff-ONA"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstNameLabel" destination="BY1-zN-nIL" id="uYO-oF-BUU"/>
-                        <outlet property="lastNameLabel" destination="u04-T1-c8B" id="Cn3-o2-J97"/>
+                        <outlet property="firstNameLabel" destination="rPQ-KF-0Mg" id="aD4-kp-obr"/>
+                        <outlet property="lastNameLabel" destination="Hw0-Q9-dcS" id="BIw-HM-SDg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX0-35-xb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3077" y="729"/>
+            <point key="canvasLocation" x="3254" y="1571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GXK-MD-Gja">
