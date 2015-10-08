@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1995" y="684"/>
+            <point key="canvasLocation" x="2147" y="706"/>
         </scene>
         <!--Person Detail View Controller-->
         <scene sceneID="hZ7-9i-bAi">
@@ -65,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPQ-KF-0Mg">
-                                <rect key="frame" x="279" y="80" width="42" height="21"/>
+                                <rect key="frame" x="227" y="266" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="9bA-Gx-KET"/>
                                     <constraint firstAttribute="height" constant="21" id="GjQ-Ia-ocZ"/>
@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw0-Q9-dcS">
-                                <rect key="frame" x="279" y="126" width="42" height="21"/>
+                                <rect key="frame" x="227" y="312" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pvB-rg-5xJ"/>
                                 </constraints>
@@ -83,15 +83,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3n-KI-Lmo">
+                                <rect key="frame" x="120" y="101" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6Ax-2u-kSI"/>
+                                    <constraint firstAttribute="width" constant="240" id="td9-cu-agy"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Hw0-Q9-dcS" firstAttribute="top" secondItem="rPQ-KF-0Mg" secondAttribute="bottom" constant="25" id="3ll-jr-mXG"/>
-                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" id="FqZ-5O-nDF"/>
-                            <constraint firstItem="Hw0-Q9-dcS" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" id="cAC-N1-pmK"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" constant="-52" id="FqZ-5O-nDF"/>
+                            <constraint firstItem="v3n-KI-Lmo" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="37" id="Qiv-dF-Hjv"/>
+                            <constraint firstItem="Hw0-Q9-dcS" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" constant="-52" id="cAC-N1-pmK"/>
                             <constraint firstItem="Hw0-Q9-dcS" firstAttribute="top" secondItem="rPQ-KF-0Mg" secondAttribute="bottom" constant="25" id="cdN-aj-Wfc"/>
-                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="16" id="xwY-cg-YRp"/>
-                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="16" id="yhl-ff-ONA"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="v3n-KI-Lmo" secondAttribute="bottom" constant="37" id="rUc-1d-1bR"/>
+                            <constraint firstItem="v3n-KI-Lmo" firstAttribute="centerX" secondItem="PPE-76-h9n" secondAttribute="centerX" constant="-60" id="tfE-lI-KYG"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="202" id="xwY-cg-YRp"/>
+                            <constraint firstItem="rPQ-KF-0Mg" firstAttribute="top" secondItem="Ku8-ms-DH2" secondAttribute="bottom" constant="202" id="yhl-ff-ONA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -101,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX0-35-xb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="1571"/>
+            <point key="canvasLocation" x="3038" y="711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GXK-MD-Gja">
