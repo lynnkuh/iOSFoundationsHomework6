@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="personTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="34" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-17-9T1" userLabel="Person Table View">
-                                <rect key="frame" x="20" y="0.0" width="594" height="672"/>
+                                <rect key="frame" x="0.0" y="0.0" width="614" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="34" id="MhH-FJ-RbW">
-                                        <rect key="frame" x="0.0" y="92" width="594" height="34"/>
+                                        <rect key="frame" x="0.0" y="92" width="614" height="34"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhH-FJ-RbW" id="x6w-5u-AvA">
-                                            <rect key="frame" x="0.0" y="0.0" width="594" height="33.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="614" height="33.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -40,7 +40,7 @@
                             <constraint firstItem="sl6-17-9T1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="7AI-au-fhN"/>
                             <constraint firstAttribute="bottomMargin" secondItem="sl6-17-9T1" secondAttribute="bottom" constant="-72" id="7f3-n8-9NT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sl6-17-9T1" secondAttribute="trailing" constant="-34" id="Nlv-AI-EX5"/>
-                            <constraint firstItem="sl6-17-9T1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="as0-Uu-NC8"/>
+                            <constraint firstItem="sl6-17-9T1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="as0-Uu-NC8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3qe-v3-FMi"/>
